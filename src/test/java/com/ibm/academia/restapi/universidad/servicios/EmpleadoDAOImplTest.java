@@ -1,9 +1,6 @@
 package com.ibm.academia.restapi.universidad.servicios;
 
-import com.ibm.academia.restapi.universidad.enumeradores.TipoEmpleado;
-import com.ibm.academia.restapi.universidad.modelo.entidades.Carrera;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Empleado;
-import com.ibm.academia.restapi.universidad.repositorios.CarreraRepository;
 import com.ibm.academia.restapi.universidad.repositorios.EmpleadoRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -13,7 +10,6 @@ import java.util.List;
 
 import static com.ibm.academia.restapi.universidad.enumeradores.TipoEmpleado.ADMINISTRATIVO;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
 class EmpleadoDAOImplTest {

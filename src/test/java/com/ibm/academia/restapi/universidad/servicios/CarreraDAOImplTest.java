@@ -1,6 +1,5 @@
 package com.ibm.academia.restapi.universidad.servicios;
 
-import com.ibm.academia.restapi.universidad.datos.DatosDummy;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Carrera;
 import com.ibm.academia.restapi.universidad.repositorios.CarreraRepository;
 
@@ -11,11 +10,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
 
 import static com.ibm.academia.restapi.universidad.datos.DatosDummy.*;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class CarreraDAOImplTest {

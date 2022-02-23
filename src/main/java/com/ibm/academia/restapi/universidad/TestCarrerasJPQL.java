@@ -12,8 +12,8 @@ import com.ibm.academia.restapi.universidad.servicios.CarreraDAO;
 @Component
 public class TestCarrerasJPQL implements CommandLineRunner 
 {
-	@Autowired
-	private CarreraDAO carreraDao;
+	/*@Autowired
+	private CarreraDAO carreraDao;*/
 	
 	@Override
 	public void run(String... args) throws Exception 

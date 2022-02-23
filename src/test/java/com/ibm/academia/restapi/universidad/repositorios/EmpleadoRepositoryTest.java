@@ -1,8 +1,6 @@
 package com.ibm.academia.restapi.universidad.repositorios;
 
 import com.ibm.academia.restapi.universidad.datos.DatosDummy;
-import com.ibm.academia.restapi.universidad.enumeradores.TipoEmpleado;
-import com.ibm.academia.restapi.universidad.modelo.entidades.Carrera;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Empleado;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +13,7 @@ import java.util.List;
 
 import static com.ibm.academia.restapi.universidad.enumeradores.TipoEmpleado.ADMINISTRATIVO;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 @DataJpaTest
 class EmpleadoRepositoryTest {
 

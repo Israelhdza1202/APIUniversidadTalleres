@@ -9,4 +9,5 @@ public interface PabellonDAO extends GenericoDAO<Pabellon>
 
     //@Query("select p from Pabellon a where upper(a.nombre) like upper(&?1%)")
     public Iterable<Pabellon> findPabellonbyNombreAfter(String nombre);
+    public Pabellon actualizar(Long pabellonId, Pabellon pabellon);
 }

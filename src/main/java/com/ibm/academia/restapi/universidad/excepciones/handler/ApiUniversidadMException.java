@@ -3,6 +3,7 @@ package com.ibm.academia.restapi.universidad.excepciones.handler;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.ibm.academia.restapi.universidad.excepciones.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -19,5 +20,12 @@ public class ApiUniversidadMException
         Map<String, Object> respuesta = new HashMap<String, Object>();
         respuesta.put("error", exception.getMessage());
         return new ResponseEntity<>(respuesta, HttpStatus.NOT_FOUND);
+    }
+    @ExceptionHandler(value = BadRequestException.class)
+    public ResponseEntity<Object> formatoInvalidoException(BadRequestException exception)
+    {
+        Map<String, Object> respuesta = new HashMap<String, Object>();
+        respuesta.put("error", exception.getMessage());
+        return new ResponseEntity<>(respuesta, HttpStatus.BAD_REQUEST);
     }
 }

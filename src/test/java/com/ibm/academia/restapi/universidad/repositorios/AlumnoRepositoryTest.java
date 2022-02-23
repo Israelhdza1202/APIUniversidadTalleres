@@ -4,8 +4,6 @@ import com.ibm.academia.restapi.universidad.datos.DatosDummy;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Alumno;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Carrera;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Persona;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 @DataJpaTest
 class AlumnoRepositoryTest {
     @Autowired

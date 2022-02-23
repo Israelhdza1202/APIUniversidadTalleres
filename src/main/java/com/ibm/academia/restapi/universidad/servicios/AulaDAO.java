@@ -13,4 +13,6 @@ public interface AulaDAO extends GenericoDAO<Aula>
 
     //@Query("select a from Aula a  where upper(a.numero_aula) like upper(&?1%)")
     public Iterable<Aula> findAulabyNumeroAulaAfter(Integer numeroAula);
+
+    public Aula  actualizar ( Long  aulaId , Aula  aula );
 }

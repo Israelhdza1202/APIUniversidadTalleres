@@ -4,7 +4,6 @@ package com.ibm.academia.restapi.universidad.servicios;
 import com.ibm.academia.restapi.universidad.enumeradores.TipoEmpleado;
 import com.ibm.academia.restapi.universidad.modelo.entidades.Empleado;
 import com.ibm.academia.restapi.universidad.repositorios.EmpleadoRepository;
-import com.ibm.academia.restapi.universidad.repositorios.PabellonRepository;
 import com.ibm.academia.restapi.universidad.repositorios.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
